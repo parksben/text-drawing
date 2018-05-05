@@ -1,0 +1,42 @@
+{
+  "name": "text-drawing",
+  "version": "1.0.0",
+  "description": "A lightweight library contains some methods to create a string as your character drawing, you can also use it for more uses such as canvas.",
+  "main": "dist/main.js",
+  "scripts": {
+    "prepublishOnly": "npm run build && npm run changelog",
+    "build": "rimraf dist && babel src --copy-files --extensions .js --out-dir dist",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/parksben/text-drawing.git"
+  },
+  "keywords": [
+    "character",
+    "drawing",
+    "text",
+    "pixels",
+    "canvas",
+    "library",
+    "utils"
+  ],
+  "author": "parksben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parksben/text-drawing/issues"
+  },
+  "homepage": "https://github.com/parksben/text-drawing#readme",
+  "dependencies": {
+    "core-js": "^2.5.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "conventional-changelog-cli": "^1.3.22",
+    "rimraf": "^2.6.2"
+  }
+}
