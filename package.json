@@ -1,6 +1,6 @@
 {
   "name": "text-drawing",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A lightweight library contains some methods to create a string as your character drawing, you can also use it for more uses such as canvas.",
   "main": "dist/main.js",
   "scripts": {

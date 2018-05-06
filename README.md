@@ -1,8 +1,8 @@
 # Text Drawing
 
-A lightweight library contains some methods to create a string as your character drawing, you can also use it for more uses such as canvas.
+A lightweight library contains some methods to create a string as your character drawing, you can also use it for more uses such as particles animation, carousel effects, etc.
 
-```
+<pre style="color:#f00;background:#222;text-align:center;">
  11111111111111111                                                                          111           111
 1111111111111111111    111111111111111                                                     11111         11111
 1111111111111111111    11111111111111111                1111          111                  11111         11111
@@ -24,18 +24,31 @@ A lightweight library contains some methods to create a string as your character
        11111           11111        111111                  1111111111                      11111       111111
        11111           111111111111111111                    1111111                        1111111    111111
        11111           11111111111111111                      11111                          1111111111111111
-       11111           1111111111111111                        111                            11111111111111  
-       11111           111111111111111                          11                             111111111111   
-                                                                                                 1111111                                                    
-```
+       11111           1111111111111111                        111                            11111111111111
+       11111           111111111111111                          11                             111111111111
+                                                                                                 1111111
+</pre>
 
 ## Features
 
-* Convert one word, one line of words, or a paragraph of text to a character drawing.
+* Converts one word, one line of words, or a paragraph of text to a character drawing.
+* Supports **multiple languages** and fonts, especially for **Chinese** and English characters.
 * You can config some options for style of drawing, includes font size, font family, font weight, word spacing, line spacing, text align.
-* Methods from this library depends on the canvas capabilities supported by modern browsers.
+* Depends on the canvas capabilities supported by modern browsers.
 
-## Method & Usage
+## Install
+
+<pre style="color:#fff;background:#333;text-align:left;">
+yarn add text-drawing
+</pre>
+
+or
+
+<pre style="color:#fff;background:#333;text-align:left;">
+npm i text-drawing
+</pre>
+
+## Methods & Usages
 
 ### 1. Word to drawing
 
@@ -299,4 +312,4 @@ console.log(drawing);
 
 ## License
 
-MIT license
+MIT License

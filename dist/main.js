@@ -23,10 +23,15 @@ var wordToDrawing = exports.wordToDrawing = function wordToDrawing(_ref) {
       height = _ref.height,
       inParagraph = _ref.inParagraph;
 
+  if (word === ' ') {
+    var rowContent = new Array(parseInt(fontSize || 40, 10) / 2).fill('-').join('');
+    return new Array(parseInt(fontSize || 40, 10)).fill(rowContent).join('\n');
+  }
+
   var wordVal = word.substring(0, 1) || 'W';
   var canvasSize = {
-    width: parseInt(fontSize, 10) || 40,
-    height: 1.5 * parseInt(fontSize, 10) || 80
+    width: parseInt(fontSize || 40, 10),
+    height: parseInt(fontSize * 1.5 || 80, 10)
   };
 
   var canvas = document.createElement('canvas');

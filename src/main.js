@@ -10,10 +10,17 @@ export const wordToDrawing = ({
   height,
   inParagraph,
 }) => {
+  if (word === ' ') {
+    const rowContent = new Array(parseInt(fontSize || 40, 10) / 2)
+      .fill('-')
+      .join('');
+    return new Array(parseInt(fontSize || 40, 10)).fill(rowContent).join('\n');
+  }
+
   const wordVal = word.substring(0, 1) || 'W';
   const canvasSize = {
-    width: parseInt(fontSize, 10) || 40,
-    height: 1.5 * parseInt(fontSize, 10) || 80,
+    width: parseInt(fontSize || 40, 10),
+    height: parseInt(fontSize * 1.5 || 80, 10),
   };
 
   const canvas = document.createElement('canvas');
